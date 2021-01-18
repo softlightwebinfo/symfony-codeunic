@@ -1,0 +1,32 @@
+syntax = "proto3";
+package proto;
+
+message ArticleDetail {
+  int64 id = 1;
+  string title = 2;
+  string description = 3;
+  int64 fkUser = 4;
+  string created_at = 5;
+  string updated_at = 6;
+  repeated ArticleDetailImages images = 7;
+  string category = 8;
+  string label = 9;
+  bool is_featured = 10;
+  repeated string tags = 11;
+}
+
+message ArticleDetailImages {
+  string image = 1;
+}
+
+message GetArticleDetailRq {
+  int64 id = 1;
+}
+
+message GetArticleDetailRs {
+  ArticleDetail data = 1;
+}
+
+service ArticleDetailService {
+  rpc GetArticle(GetArticleDetailRq) returns (GetArticleDetailRs) {}
+}

@@ -1,0 +1,9 @@
+.galleryImagesHover {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    width: 25%;
+    height: 300px;
+    display: block;
+  }
+}

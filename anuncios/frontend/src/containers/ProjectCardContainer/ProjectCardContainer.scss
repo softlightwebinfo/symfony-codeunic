@@ -1,0 +1,20 @@
+@import "src/scss/vars";
+
+.ProjectCardContainer {
+  & &__description {
+    margin-top: $spacing;
+  }
+
+  &__image {
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+  }
+
+  & &__flex {
+    margin-top: $spacing;
+  }
+}

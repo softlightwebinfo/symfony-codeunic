@@ -1,0 +1,15 @@
+.newModelsAccount {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: -10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  a {
+    width: calc(100% / 3);
+    display: block;
+    padding: 10px;
+  }
+}

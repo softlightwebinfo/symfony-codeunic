@@ -1,0 +1,12 @@
+@mixin ArrowDown($arrow: $arrow-size) {
+  width: 0;
+  height: 0;
+  border-left: $arrow solid transparent;
+  border-right: $arrow solid transparent;
+  border-top: $arrow solid $color-white;
+  font-size: 1em;
+  line-height: 0;
+  content: "";
+  margin: auto;
+  display: flex;
+}

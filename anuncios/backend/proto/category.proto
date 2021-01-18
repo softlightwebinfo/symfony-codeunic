@@ -1,0 +1,30 @@
+syntax = "proto3";
+package proto;
+
+message Category {
+  int64 id = 1;
+  string category = 2;
+  int64 parent = 3;
+  repeated Category categories = 4;
+}
+
+message GetAllParentsRq {
+
+}
+
+message GetAllParentsRs {
+  repeated Category categories = 1;
+}
+
+message GetAllRq {
+
+}
+
+message GetAllRs {
+  repeated Category categories = 1;
+}
+
+service CategoryService {
+  rpc GetAll (GetAllRq) returns (GetAllRs) {}
+  rpc GetAllParents (GetAllParentsRq) returns (GetAllParentsRs) {}
+}

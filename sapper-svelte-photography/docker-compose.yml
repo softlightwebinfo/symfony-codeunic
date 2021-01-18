@@ -1,0 +1,66 @@
+version: "3.3"
+services:
+  traefik:
+    image: "traefik:v2.3"
+    container_name: "traefik"
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+  whoami:
+    image: "traefik/whoami"
+    container_name: "simple-service"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`whoami.localhost`)"
+      - "traefik.http.routers.whoami.entrypoints=web"
+  postgres:
+    image: postgres:12
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgrespassword
+
+  graphql-engine:
+    image: hasura/graphql-engine:v1.3.4-beta.2
+    depends_on:
+      - "postgres"
+    restart: always
+    environment:
+      # database url to connect
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
+      ## enable the console served by server
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set "false" to disable console
+      ## enable debugging mode. It is recommended to disable this in production
+      HASURA_GRAPHQL_DEV_MODE: "true"
+      ## uncomment next line to set an admin secret
+      # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+    ports:
+      - 9000:8080
+    command:
+      - graphql-engine
+      - serve
+    labels:
+      - "traefik.port=80"
+      - "traefik.enable=true"
+      - "traefik.http.routers.hasura.rule=Host(`hasura.localhost`)"
+      - "traefik.http.routers.hasura.entrypoints=web"
+
+volumes:
+  db_data:
+
+networks:
+  # everything that is *only* on "internal network" cannot talk to WAN
+  internal-network:
+    internal: true
+  # add this network to a container to make it talk to the rest of the world
+  outside-world:

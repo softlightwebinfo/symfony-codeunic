@@ -1,0 +1,13 @@
+.button {
+  @include transition-default();
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: .03em;
+  padding: 12px 24px;
+  border-radius: 99em;
+  display: inline-flex;
+  border: none;
+  background: #8bb8c1;
+  text-decoration: none;
+  width: max-content;
+}

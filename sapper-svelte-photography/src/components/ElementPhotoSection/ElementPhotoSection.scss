@@ -1,0 +1,37 @@
+.elementPhotoSection {
+  $p: 60px;
+  padding-top: $p;
+  padding-bottom: $p;
+  display: flex;
+  flex-direction: row;
+
+  h2 {
+    color: #151515;
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+    line-height: 1.2em;
+  }
+
+  p {
+    line-height: 1.7;
+    margin-bottom: 0;
+    color: rgb(133, 133, 133);
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  &__left {
+    display: flex;
+    padding-right: 30px;
+
+    img {
+      flex: 1;
+      width: 50% !important;
+
+      &:first-child {
+        padding-right: 20px;
+      }
+    }
+  }
+}

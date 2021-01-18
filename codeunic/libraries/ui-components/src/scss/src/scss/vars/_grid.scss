@@ -1,0 +1,12 @@
+$grid-cols: 12;
+$grid-col-sm: 36;
+$grid-col-md: 48;
+$grid-col-lg: 62;
+$grid-col-xl: 75;
+$map-grid-props: (
+        '': 0,
+        sm: $grid-col-sm,
+        md: $grid-col-md,
+        lg: $grid-col-lg,
+        xl: $grid-col-xl
+);

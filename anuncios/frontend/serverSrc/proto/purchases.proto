@@ -1,0 +1,56 @@
+syntax = "proto3";
+package proto;
+
+message Project {
+  int64 id = 1;
+  string title = 2;
+  string description = 3;
+  string imagePreview = 4;
+  string currentPrice = 5;
+  string currentTimeHours = 6;
+  string updatedAt = 7;
+  ProjectUser user = 8;
+}
+
+message ProjectUser {
+  int64 id = 1;
+  string userName = 2;
+}
+
+message ArticlePurchases {
+  int64 id = 1;
+  string title = 2;
+  string description = 3;
+  int64 fk_user = 4;
+  string created_at = 5;
+  string updated_at = 6;
+  repeated ArticlePurchasesImages images = 7;
+  string category = 8;
+  string label = 9;
+  bool is_featured = 10;
+}
+
+message ArticlePurchasesImages {
+  string image = 1;
+}
+
+message GetAllProjectsRq {
+
+}
+
+message GetAllProjectsRs {
+  repeated Project data = 1;
+}
+
+message GetAllArticlesRq {
+
+}
+
+message GetAllArticlesRs {
+  repeated ArticlePurchases data = 1;
+}
+
+service PurchasesService {
+  rpc GetAllProjects (GetAllProjectsRq) returns (GetAllProjectsRs) {}
+  rpc GetAllArticles (GetAllArticlesRq) returns (GetAllArticlesRs) {}
+}

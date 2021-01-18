@@ -1,0 +1,34 @@
+@mixin FlexGrid--vertical {
+  flex-flow: column wrap;
+}
+
+@mixin CreateColClassnames($modifier, $gridCols, $breakpoint) {
+  @include Responsive($breakpoint) {
+    @for $i from 1 through $gridCols {
+      $numberCol: $i;
+      @if ($i == 1) {
+        &--#{$modifier}#{$numberCol}-offset-0 {
+          margin-left: 0;
+        }
+      }
+
+      @if ($modifier != "") {
+        $numberCol: -$i;
+      }
+
+      &--#{$modifier}#{$numberCol} {
+        flex-basis: (100 / ($gridCols / $i)) * 1%;
+      }
+
+      &--#{$modifier}-offset#{$numberCol} {
+        margin-left: (100 / ($gridCols / $i)) * 1%;
+      }
+    }
+  }
+}
+
+@mixin GenerateAllColClassnames() {
+  @each $modifier, $breakpoint in $map-grid-props {
+    @include CreateColClassnames($modifier, $grid-cols, $breakpoint);
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "btnLogin": "Iniciar sesion",
+  "btnCreateAccount": "Crear nueva cuenta",
+  "needHelp": "Necesitas ayuda",
+  "name": "Nombre",
+  "phone": "Telefono",
+  "email": "Correo electronico",
+  "password": "Contraseña",
+  "youHaveAccount": "Tienes cuenta",
+  "message": "Mensaje",
+  "contactUs": "Contactar",
+  "oops": "Lo siento... 404!",
+  "notFound": "No se pudo encontrar la página solicitada",
+  "goToHome": "Volver a la pagina principal",
+  "somethingWentWrong": "¡Algo salió mal!",
+  "serverError": "Error del servidor 500. Nuestro personal ha sido notificado, gracias por su comprensión."
+}

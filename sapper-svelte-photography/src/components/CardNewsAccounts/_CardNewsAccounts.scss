@@ -1,0 +1,30 @@
+:global(.image) {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+h3 {
+  text-decoration: none;
+  margin-top: 1em;
+  text-align: center;
+  color: #151515;
+  font-size: 2em;
+}
+
+div {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: #454545;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: #858585;
+  font-size: 16px;
+  text-align: center;
+}

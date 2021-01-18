@@ -1,0 +1,17 @@
+{
+  "btnLogin": "Login",
+  "btnCreateAccount": "Create account",
+  "needHelp": "Need help",
+  "name": "Name",
+  "phone": "Phone",
+  "email": "Email",
+  "password": "Password",
+  "youHaveAccount": "You have account",
+  "message": "Message",
+  "contactUs": "Contact Us",
+  "oops": "Ooops... 404!",
+  "notFound": "The page your requested could not be found",
+  "goToHome": "Back to home",
+  "somethingWentWrong": "Something went wrong!",
+  "serverError": "Server Error 500. Our staff has been notified, thank you for your understanding."
+}
