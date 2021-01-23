@@ -14,13 +14,15 @@
 </style>
 
 <nav class="{isScroll ? 'nav--scroll': 'nav'}">
-    <Container>
-        <ul>
-            {#each navOptions as nav}
-                <li>
-                    <a aria-current="{segment === nav.route ? 'page' : undefined}" href="{nav.route}">{nav.label}</a>
-                </li>
-            {/each}
-        </ul>
-    </Container>
+  <Container>
+    <ul>
+      {#each navOptions as nav}
+        <li>
+          <a
+            aria-current="{(segment === nav.route || (nav.route == '' && segment == undefined))? 'page' : undefined}"
+            href="{nav.route}">{nav.label}</a>
+        </li>
+      {/each}
+    </ul>
+  </Container>
 </nav>

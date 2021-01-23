@@ -5,4 +5,4 @@
 <style lang="scss">
   @import "Image";
 </style>
-<img class="image" src="{image}" title="{title}" alt="{title}">
+<img class="image" on:click src="{image}" title="{title}" alt="{title}">

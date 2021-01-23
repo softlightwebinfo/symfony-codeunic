@@ -1,0 +1,43 @@
+section {
+  $p: 80px;
+  padding-top: $p;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+
+
+  :global(.image) {
+    height: 300px;
+    object-fit: cover;
+  }
+
+}
+
+a {
+  position: relative;
+  @include transition-default;
+
+  &:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
+}
+
+p {
+  padding: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+h3, p {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  position: absolute;
+  padding: 30px;
+  bottom: 0;
+}

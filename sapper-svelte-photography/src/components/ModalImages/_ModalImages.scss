@@ -1,0 +1,81 @@
+div {
+  @include transition-default;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  background-color: #0000001c;
+  padding: 20px;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+}
+
+.right {
+  right: 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+
+  &__section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    overflow: auto;
+
+    :global(.image) {
+      user-select: none;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+
+    :global(.image) {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      @include transition-default;
+
+      &:hover {
+        opacity: .7;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+aside {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  padding: 10px;
+  background-color: #6767a4;
+  color: white;
+  margin: 0;
+}
+
+p {
+  color: $color-description;
+  padding: 10px;
+  margin: 0;
+  flex: 1;
+}

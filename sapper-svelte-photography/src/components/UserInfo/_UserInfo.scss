@@ -1,0 +1,33 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  :global(.image) {
+    width: 100px;
+    height: initial;
+  }
+}
+
+div {
+  padding: 5px 10px;
+  line-height: 1.2;
+  min-width: 200px;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}
+
+h3 {
+  margin: 0;
+}
+
+i {
+  font-size: 10px;
+  display: block;
+}

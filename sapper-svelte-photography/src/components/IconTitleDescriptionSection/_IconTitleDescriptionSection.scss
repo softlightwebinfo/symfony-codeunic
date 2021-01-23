@@ -4,7 +4,9 @@ section {
   padding: $section-padding;
 
   :global(.container) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
   }
 
   article {
@@ -26,7 +28,6 @@ section {
     margin-bottom: 20px;
     color: white;
   }
-
 
   p {
     color: white;

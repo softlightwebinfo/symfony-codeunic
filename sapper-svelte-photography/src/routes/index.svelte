@@ -1,87 +1,40 @@
 <script>
-    import ContactForm from "../components/ContactForm/ContactForm.svelte";
-    export let users;
+  import ContactForm from "../components/ContactForm/ContactForm.svelte";
+  import GalleryImages from "../components/GalleryImages/GalleryImages.svelte";
+  import Footer from "../components/Footer/Footer.svelte";
+  import {getImageUpload} from "../libs/images";
+  import CategoriesList from "../components/CategoriesList/CategoriesList.svelte";
+
+  export let data;
+  $: imagesHover = data.images_aggregate.nodes.map((image) => ({
+    image: getImageUpload(image.image),
+    title: image.title,
+    category: image.album.title,
+  }))
 </script>
 <script context="module">
-    import SliderVideo from "../components/SliderVideo/SliderVideo.svelte";
-    import ElementPhotoSection from "../components/ElementPhotoSection/ElementPhotoSection.svelte";
-    import GalleryImagesHover from "../components/GalleryImagesHover/GalleryImagesHover.svelte";
-    import PopulateMessage from "../components/PopulateMessage/PopulateMessage.svelte";
-    import NewModelsAccount from "../components/NewModelsAccount/NewModelsAccount.svelte";
-    import IconTitleDescriptionSection
-        from "../components/IconTitleDescriptionSection/IconTitleDescriptionSection.svelte";
-    import {cog, diamond, camera} from 'svelte-awesome/icons';
+  import SliderVideo from "../components/SliderVideo/SliderVideo.svelte";
+  import ElementPhotoSection from "../components/ElementPhotoSection/ElementPhotoSection.svelte";
+  import GalleryImagesHover from "../components/GalleryImagesHover/GalleryImagesHover.svelte";
+  import PopulateMessage from "../components/PopulateMessage/PopulateMessage.svelte";
+  import NewModelsAccount from "../components/NewModelsAccount/NewModelsAccount.svelte";
+  import IconTitleDescriptionSection
+    from "../components/IconTitleDescriptionSection/IconTitleDescriptionSection.svelte";
+  import * as icon from 'svelte-awesome/icons';
 
-    import apollo from "../apollo";
-    import {GET_USERS} from "../apollo/users";
+  import apollo from "../apollo";
+  import {HOME_PAGE} from "../apollo/home_page";
 
-    let str = "Loading...";
+  let str = "Loading...";
 
-    export async function preload() {
-        let {data} = await apollo.query({
-            query: GET_USERS
-        });
-        return {
-            users: data.users,
-        };
-    }
-
-    const images = [
-        {title: "imagen 1", image: "images/team-2.jpg"},
-        {title: "imagen 2", image: "images/team-3.jpg"},
-    ];
-
-    const imagesGallery = [
-        {image: "images/gal-4-05.jpg", title: "Ellen & James", category: "weddings"},
-        {image: "images/gal-5-04.jpg", title: "Ellen & James 2", category: "weddings 2"},
-        {image: "images/gal-4-05.jpg", title: "Ellen & James", category: "weddings"},
-        {image: "images/gal-5-04.jpg", title: "Ellen & James 2", category: "weddings 2"},
-        {image: "images/gal-4-05.jpg", title: "Ellen & James", category: "weddings"},
-        {image: "images/gal-5-04.jpg", title: "Ellen & James 2", category: "weddings 2"},
-        {image: "images/gal-4-05.jpg", title: "Ellen & James", category: "weddings"},
-        {image: "images/gal-5-04.jpg", title: "Ellen & James 2", category: "weddings 2"},
-    ];
-
-    const newModelsAccountData = [
-        {
-            image: "images/gal-4-05.jpg",
-            date: "2019-10-20",
-            category: "News portraits",
-            title: "Lovely Wedding",
-            description: "Arnare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem et ..."
-        },
-        {
-            image: "images/gal-4-05.jpg",
-            date: "2019-10-20",
-            category: "News portraits",
-            title: "Lovely Wedding",
-            description: "Arnare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem et ..."
-        },
-        {
-            image: "images/gal-4-05.jpg",
-            date: "2019-10-20",
-            category: "News portraits",
-            title: "Lovely Wedding",
-            description: "Arnare varius mauris eu commodo. Aenean nibh risus, rhoncus eget consectetur ac. Consectetur adipiscing elit. Vivamus auctor condimentum sem et ..."
-        },
-    ];
-    const IconTitleDescriptionSectionData = [
-        {
-            title: "Visual Storytellers",
-            description: "Veri ubique cu eam, vero dicta ridens ei quo, ex putent menandri accommodare sed. Suscipit lobortis prodesset ut eam.",
-            icon: cog,
-        },
-        {
-            title: "It's All About You",
-            description: "Veri ubique cu eam, vero dicta ridens ei quo, ex putent menandri accommodare sed. Suscipit lobortis prodesset ut eam.",
-            icon: diamond
-        },
-        {
-            title: "Beauty & Elegance",
-            description: "Veri ubique cu eam, vero dicta ridens ei quo, ex putent menandri accommodare sed. Suscipit lobortis prodesset ut eam.",
-            icon: camera,
-        },
-    ];
+  export async function preload() {
+    let {data} = await apollo.query({
+      query: HOME_PAGE
+    });
+    return {
+      data: data,
+    };
+  }
 </script>
 <style global lang="scss">
   .slider-video {
@@ -89,31 +42,24 @@
   }
 </style>
 <svelte:head>
-    <title>Sapper project template</title>
+  <title>Sapper project template</title>
 </svelte:head>
 <SliderVideo
-        title="Creative Photography Studio"
-        description="Cum et labore appareat, te est nostrum eligendi adipisci. Tota quas habeo eu vel. Vel autem apeirian primis."
+  description={data.configs_by_pk.description}
+  title={data.configs_by_pk.title}
 />
-<ElementPhotoSection
-        images="{images}"
-        title="We're Gleam a small and enthusiastic photography studio based in New York"
-        description="We love photography and travel for meeting new beautiful people all over the world. Propriae voluptaria dissentias nam ei, posse diceret inciderint cum ut, gubergren sadipscing ei vim. Ancillae torquatos in nec, impetus nostrum ea eos."
-/>
-<GalleryImagesHover
-        images="{imagesGallery}"
-/>
-<PopulateMessage
-        message="The creativity and talent of the Gleam team was amazing. Pro in hinc exerci gloriatur, ius ut agam consectetuer, quo te euismod corrumpit. "
-        user="ANNA JONES - BRIDE"
-/>
-<NewModelsAccount
-        data="{newModelsAccountData}"
-/>
-<IconTitleDescriptionSection
-        data={IconTitleDescriptionSectionData}
-/>
-<ContactForm/>
-{#each users as user}
-    {user.id}
+{#each data.images_users_home_aggregate.nodes as home}
+  <ElementPhotoSection
+    description={home.description}
+    images="{home.user.images}"
+    title={home.title}
+  />
 {/each}
+<GalleryImagesHover images="{imagesHover}"/>
+<PopulateMessage message={data.view_testimonials_home[0].message} user={data.view_testimonials_home[0].name}/>
+<NewModelsAccount data="{data.albums}"/>
+<IconTitleDescriptionSection data={data.about_us_list.map(i => ({...i, icon: icon[i.icon]}))}/>
+<CategoriesList categories="{data.categories}"/>
+<ContactForm/>
+<GalleryImages images="{data.images_random}"/>
+<Footer/>

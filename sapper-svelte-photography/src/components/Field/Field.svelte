@@ -5,8 +5,9 @@
 <script lang="ts">
     export let value = "";
     export let label = "";
+    export let required = false;
 </script>
 <label class="field">
-    <span>{label}</span>
-    <input type="text" bind:value={value}/>
+  <span>{label}</span>
+  <input required="{required}" bind:value={value} placeholder={label} type="text"/>
 </label>

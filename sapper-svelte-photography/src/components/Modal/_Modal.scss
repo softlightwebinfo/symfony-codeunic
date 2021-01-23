@@ -1,0 +1,53 @@
+.overload {
+  position: fixed;
+  @include transition-default;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.modal {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1024px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+  :global(.image) {
+    width: auto;
+    height: 100%;
+    user-select: none;
+  }
+
+  header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    :global(svg) {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  section {
+    overflow: auto;
+  }
+}

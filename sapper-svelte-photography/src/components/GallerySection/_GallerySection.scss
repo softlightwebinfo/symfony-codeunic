@@ -1,0 +1,67 @@
+.gallerySection {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-gap: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  aside {
+    $p: 80px;
+    padding-top: $p;
+    padding-bottom: $p;
+  }
+
+  section {
+    $p: 80px;
+    padding-top: $p;
+    padding-bottom: $p;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+    :global(.image) {
+      object-fit: cover;
+      height: 300px;
+    }
+
+    :global(.pagination) {
+      grid-column: span 4;
+    }
+  }
+
+  article {
+    @include transition-default;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
+  }
+}
+
+div {
+  @include transition-default;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  background-color: #0000001c;
+  padding: 20px;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+}
+
+.right {
+  right: 0;
+}
+
+aside {
+  li.active {
+    color: $selected;
+  }
+}

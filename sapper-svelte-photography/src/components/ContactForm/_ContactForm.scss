@@ -1,4 +1,6 @@
 form {
+  background-color: #fdf9f9;
+
   :global(.container) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

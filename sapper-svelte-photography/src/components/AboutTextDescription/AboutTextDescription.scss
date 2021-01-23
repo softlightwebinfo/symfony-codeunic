@@ -1,0 +1,31 @@
+h2, p {
+  text-align: center;
+}
+
+section {
+  padding: 80px;
+}
+
+p {
+  color: rgb(133, 133, 133);
+}
+
+div {
+
+}
+
+h2, p {
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+section {
+  &:nth-child(even) {
+    background-color: gainsboro;
+  }
+}

@@ -1,0 +1,13 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  :global(.image) {
+    flex: 1;
+    height: 300px;
+    transition: opacity .25s linear, filter .25s linear;
+    position: relative;
+    opacity: 1;
+    object-fit: cover;
+  }
+}

@@ -5,6 +5,11 @@
   display: flex;
   flex-direction: row;
 
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    border-bottom: 1px dashed gainsboro;
+  }
+
   h2 {
     color: #151515;
     padding: 0;
@@ -24,6 +29,7 @@
   &__left {
     display: flex;
     padding-right: 30px;
+    flex: 0 0 55%;
 
     img {
       flex: 1;

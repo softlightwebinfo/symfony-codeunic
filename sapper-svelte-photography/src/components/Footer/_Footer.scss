@@ -1,0 +1,30 @@
+footer {
+  padding: 54px;
+  background: #151515;
+  color: #eaeaea;
+
+  :global(.container) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: .03em;
+    margin-bottom: 24px;
+    position: relative;
+    color: white;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+}

@@ -1,0 +1,25 @@
+.usersAccount {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  a {
+    width: calc(100% / 3);
+    display: block;
+    padding: 10px;
+  }
+}
+
+.all {
+  a {
+    width: 100%;
+  }
+
+  :global(.container) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

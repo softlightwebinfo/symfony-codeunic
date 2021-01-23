@@ -1,0 +1,24 @@
+section {
+  :global(.container) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: $section-padding;
+    grid-gap: 40px;
+  }
+}
+
+h2 {
+  grid-column: span 3;
+}
+
+a {
+  @include transition-default;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+h3 {
+  font-weight: bold;
+}
