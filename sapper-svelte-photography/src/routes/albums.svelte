@@ -3,11 +3,14 @@
   import GalleryImages from "../components/GalleryImages/GalleryImages.svelte";
   import Footer from "../components/Footer/Footer.svelte";
   import GalleryImagesAlbums from "../components/GalleryImagesAlbums/GalleryImagesAlbums.svelte";
+  import {getImageUpload} from "../libs/images";
 
   export let data;
-  let imagesHover = data.images_aggregate.nodes.map((image) => ({
-    image: `upload/${image.image}`,
-    title: image.title, category: image.album.title,
+  $: imagesHover = data.albums.map((image) => ({
+    image: getImageUpload(image.images[0].image),
+    title: image.title,
+    category: image.images[0].title,
+    id: image.id,
   }))
 </script>
 <script context="module">

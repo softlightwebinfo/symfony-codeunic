@@ -39,27 +39,6 @@
   }
 }
 
-div {
-  @include transition-default;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: inline-flex;
-  align-items: center;
-  background-color: #0000001c;
-  padding: 20px;
-  color: white;
-
-  &:hover {
-    cursor: pointer;
-    opacity: .5;
-  }
-}
-
-.right {
-  right: 0;
-}
-
 aside {
   li.active {
     color: $selected;

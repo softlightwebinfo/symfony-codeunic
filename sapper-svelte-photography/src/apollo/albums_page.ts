@@ -13,14 +13,12 @@ export const ALBUMS_PAGE = gql`
             id
             title
         }  
-         images_aggregate(limit: 10, where: {album: {id: {_is_null: false}}}) {
-            nodes {
-                id
+        albums(order_by: {updated_at: desc}, where: {images: {id: {}}}) {
+            id
+            title
+            images(order_by: {updated_at: desc}, limit: 1) {
                 image
                 title
-                album {
-                    title
-                }
             }
         }
 	}

@@ -45,6 +45,11 @@ export const PHOTOGRAPHERS_PAGE = gql`
                 }
             }
         }
+        ads: ads_random(where: {pages_section: {page: {token: {_eq: "photographers"}}}}, limit: 1) {
+            id
+            title
+            file
+        }
     }
 `;
 
@@ -92,6 +97,11 @@ export const PHOTOGRAPHERS_PAGE_SLUG = gql`
                     user_type
                 }
             }
+        }
+        ads: ads_random(where: {pages_section: {page: {token: {_eq: "photographers"}}}}, limit: 1) {
+            id
+            title
+            file
         }
     }
 `;

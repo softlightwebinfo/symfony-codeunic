@@ -12,6 +12,7 @@
     import { slug } from "../../libs/slug";
     import settings from "../../settings";
     import UsersAccount from "../UsersAccount/UsersAccount.svelte";
+    import CustomAs from "../CustomAs/CustomAs.svelte";
 
     export let images = [];
     export let categories = [];
@@ -20,6 +21,7 @@
     export let pageRoute;
     export let total;
     export let per_page;
+    export let ads;
 
     let openModal = false;
     let currentIndex = 0;
@@ -65,6 +67,7 @@
         </li>
       {/each}
     </ul>
+    <CustomAs {ads}/>
   </aside>
   <section>
     {#if !imagesNew.length}

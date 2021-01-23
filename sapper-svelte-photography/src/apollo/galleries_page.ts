@@ -17,6 +17,7 @@ export const GALLERIES_PAGE = gql`
             image
             title
             id
+            description
         }
         images_aggregate {
             aggregate {
@@ -32,5 +33,10 @@ export const GALLERIES_PAGE = gql`
                 }
             }             
         } 
+        ads: ads_random(where: {pages_section: {page: {token: {_eq: "galleries"}}}}, limit: 1) {
+            id
+            title
+            file
+        }
     }
 `;

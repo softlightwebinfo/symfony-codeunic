@@ -5,12 +5,11 @@
 <script lang="ts">
     import { getImageUpload } from "../../libs/images";
     import Image from "../Image/Image.svelte";
-    import Modal from "../Modal/Modal.svelte";
-    import Icon from 'svelte-awesome/components/Icon.svelte'
-    import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
     import Pagination from "../Pagination/Pagination.svelte";
     import { slug } from "../../libs/slug";
     import settings from "../../settings";
+    import ModalImages from "../ModalImages/ModalImages.svelte";
+    import CustomAs from "../CustomAs/CustomAs.svelte";
 
     export let images = [];
     export let categories = [];
@@ -19,6 +18,7 @@
     export let pageRoute;
     export let total;
     export let per_page;
+    export let ads = [];
 
     let openModal = false;
     let currentIndex = 0;
@@ -29,20 +29,6 @@
     }
     const onClose = () => {
         openModal = false;
-    };
-    const onClickLeft = () => {
-        const imagesSize = images.length - 1;
-        currentIndex = currentIndex - 1;
-        if (currentIndex < 0) {
-            currentIndex = imagesSize;
-        }
-    };
-    const onClickRight = () => {
-        const imagesSize = images.length - 1;
-        currentIndex = currentIndex + 1;
-        if (currentIndex > imagesSize) {
-            currentIndex = 0;
-        }
     };
 </script>
 <section class="gallerySection">
@@ -57,6 +43,7 @@
         </li>
       {/each}
     </ul>
+    <CustomAs {ads}/>
   </aside>
   <section>
     {#if !images.length}
@@ -78,12 +65,9 @@
     {/if}
   </section>
 </section>
-<Modal bind:open={openModal} onClose={onClose}>
-  <div class="left" on:click={onClickLeft}>
-    <Icon data="{faChevronLeft}"/>
-  </div>
-  <Image image={ getImageUpload(images[currentIndex].image, false)} title="{images[currentIndex].title}"/>
-  <div class="right" on:click={onClickRight}>
-    <Icon data="{faChevronRight}"/>
-  </div>
-</Modal>
+<ModalImages
+  {currentIndex}
+  {images}
+  onClose="{onClose}"
+  {openModal}
+/>

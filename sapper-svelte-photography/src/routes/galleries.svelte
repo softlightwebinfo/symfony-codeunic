@@ -47,6 +47,7 @@
   bind:currentPage="{currentPage}"
   bind:per_page="{settings.galleryPaginationSize}"
   bind:total="{data.images_aggregate.aggregate.count}"
+  ads="{data.ads}"
   categories="{data.categories}"
   images="{data.images}"
   pageRoute="galleries"

@@ -5,13 +5,14 @@
 <script>
   import Container from "../Container/Container.svelte";
   import Image from "../Image/Image.svelte";
+  import {slug} from "../../libs/slug";
 
   export let images = [];
 </script>
 <Container>
   <section>
     {#each images as image}
-      <a href="portfolio">
+      <a href="albums/{slug(image.title)}/{image.id}">
         <article>
           <Image image="{image.image}" title="{image.title}"/>
           <div>

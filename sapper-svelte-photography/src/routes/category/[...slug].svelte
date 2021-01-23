@@ -54,6 +54,7 @@
   bind:idCategory="{category}"
   images="{data.images}"
   pageRoute="galleries"
+  ads={data.ads}
 />
 <GalleryImages images="{data.images_random}"/>
 <Footer/>
