@@ -1,0 +1,50 @@
+header {
+  background-color: #fffffff2;
+  z-index: 2;
+  position: relative;
+  height: 60px;
+
+  :global(.container) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  //align-items: flex-end;
+  padding: 0 20px;
+  align-items: center;
+  margin-bottom: -25px;
+}
+
+a {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  padding: 5px 10px;
+  min-width: 99px;
+  text-align: center;
+  @include transition-default;
+
+  &:hover {
+    background-color: $selected;
+    color: white;
+  }
+
+  &:first-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  & + a {
+    border-left: 0;
+    border-radius: 0;
+  }
+}
