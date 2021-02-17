@@ -1,0 +1,12 @@
+section {
+  background: url(../images/screen-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}

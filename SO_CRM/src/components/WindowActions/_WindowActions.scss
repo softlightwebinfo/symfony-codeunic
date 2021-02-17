@@ -1,0 +1,50 @@
+@import "src/style/theme";
+
+div {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+}
+
+button {
+  $s: 10px;
+  width: $s;
+  height: $s;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 2px;
+
+  > :global(svg) {
+    opacity: 0;
+    @include transitionDefault;
+  }
+
+  & + & {
+    margin-left: 5px;
+  }
+
+  &:nth-child(1) {
+    background-color: #ff0000;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa500;
+  }
+
+  &:nth-child(3) {
+    background-color: #1bbf1b;
+  }
+}
+
+div {
+  &:hover {
+    button :global(svg) {
+      opacity: 1;
+    }
+  }
+}

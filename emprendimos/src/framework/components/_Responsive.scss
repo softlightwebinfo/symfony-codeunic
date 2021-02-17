@@ -1,0 +1,46 @@
+.Zebras {
+  @media screen and(max-width: 1315px) {
+    .Zebra {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media screen and(max-width: 1041px) {
+    .Zebra {
+      padding: 0;
+
+      &__container {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and(max-width: 862px) {
+    .Zebra {
+      &__container {
+        flex-direction: column;
+      }
+
+      &__image {
+        flex: 1;
+      }
+
+      &__content {
+        padding: 0;
+      }
+    }
+  }
+}
+
+._saberMas_buttons {
+  @media screen and(max-width: 420px) {
+    a {
+      margin: 0 !important;
+
+      &:first-child {
+        margin-bottom: 10px !important;
+      }
+    }
+  }
+}
+
+

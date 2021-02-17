@@ -1,0 +1,25 @@
+@import "src/style/theme";
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include transitionDefault;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  width: var(--icons-size);
+  height: var(--icons-size);
+}
+
+p {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 5px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_about_us_list.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_actions.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_ads.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_ads_actions.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_albums.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_albums_tags.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_categories.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_configs.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_contacts.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_images.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_images_tag.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_pages.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_pages_sections.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_posts.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_testimonials.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_user_types.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_users.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_users_showcase.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/sql/postgres_public_view_testimonials_home.sql" dialect="PostgreSQL" />
+  </component>
+</project>

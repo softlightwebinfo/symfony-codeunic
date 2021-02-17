@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20093bb4-0bd3-4bdb-bc3c-f9e31608d948" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/apps/browser/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/calc/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/notes/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AccessButton/AccessButton.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AccessButton/_AccessButton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Window/Window.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Window/_Window.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WindowActions/WindowActions.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WindowActions/_WindowActions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Windows/Windows.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Windows/_Windows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/grid.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/pannable.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions/libs/objectFilter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/test.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apple-Products-Imac-Aluminium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apple-Products-MacBookPro-Unibody.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apple-Products-MacBookPro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-1Password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-3DCoat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-3hub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-ABetterFinderRename.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ableton-Live.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Activity-Monitor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adapter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adguard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-After-Effect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Animate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Audition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Bridge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Dreamweaver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Fireworks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Flash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Illustrator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Indesign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Lightroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Muse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Photoshop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Premiere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-Reader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Adobe-XD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Affinity-Designer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Affinity-Photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Affinity-Publisher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Air-Video-Server-HD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Airport-Utility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Alacritty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Alfred.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Amadeus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-AmadeusPro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-AmazonMusic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Amethyst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Android-File-Transfer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Android-Studio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Anki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Aperture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-App-Store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-AppCleaner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-AppZapper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Apple-Music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Apple-TV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Archive-Utility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Arduino.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Atom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Audacity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-AudioMidiSetup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Authy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Autodesk-Fusion-360.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Autodesk-Maya.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Automator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Awaken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-BBedit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Balsamiq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-BetterTouchTool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Bevy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Bittorrent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Bitwig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Blender.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Bluetooth-File-Exchange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-BootCampAssistant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Bowtie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Brackets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Brave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Byword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-CCleaner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Caffeine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Calculator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Calendar-empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Calibre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Camtasia-Studio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Canary-Mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Charles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Cinema4D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-ClamXav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-CleanMyDrive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-CleanMyMac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Clip-Studio-Paint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Cloudapp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Coda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Codekit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Color-Picker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-CommanderOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Compressor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Console.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Contacts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Cord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-CyberDuck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-DaisyDisk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Darktable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Dash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Dashlane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-DayOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Deezer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Delicious-Library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Deluge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Dictionary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Discord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Disk-Utility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Docker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Downie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Dropbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Droplr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Eclipse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Escape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Evernote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Facetime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Filebot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Filezilla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-FinalCutPro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Firefox-Developer-Edition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Firefox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Flamingo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Flowdock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Flume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Flux.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Folx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Font-Book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Forklift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Franz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-GNS3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Game-Center.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Garage-Band.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-GeekBench.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Geektool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Gemini2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Genymotion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ghostwriter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Gimp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-GiphyCapture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Github-Grumpy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Gitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Goodnotes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Google-App-Launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Google-Chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Google-Drive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Google-Photos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Grammarly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Grids.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Growl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-GrowlHardwareGrowler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Guitar-Pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Hack-Store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Hammerspoon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Handbrake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Heroes-Of-The-Storm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Hipchat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Hyperterm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-IAWriter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ibooks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Icompta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Iconvert-Icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ida-alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ida.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Image-Capture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-ImageOptim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Imovie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Indigodomo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Inkscape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Instabro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Instacast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Invision-Studio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ios-Simulator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Iterm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Itsycal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Itunes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-JDownloader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-AppCode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-Clion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-Idea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-PhpStorm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-PyCharm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-RubyMine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jetbrains-Webstorm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Jira.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Kaleidoscope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Karabiner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Keka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Keyboard-Maestro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Kindle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-LastFm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Launchpad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Leaf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Lightworks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-LiteIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-LittleSnitch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Logic-Pro-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Luminar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Macvim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Mailbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Malwarebytes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Mamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-MampPro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Maps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-MediaInfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Mega.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Messages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Miro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Mission-Control.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Monosnap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Moom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Motion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Mplayer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-Excel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-OneNote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-Outlook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-Powerpoint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-Remote-Desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-Teams.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Ms-Word.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-MySQLWorkbench.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-NAS-Navigator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Neovim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Netbeans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Netflix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-NordVPN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Notes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-NylasN1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Omigraffle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-OmniPlan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Onyx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-OpenBroadcasterSoftware.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-OpenOffice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-OpenTTD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Opera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Origin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Otowui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Owncloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Pacifist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Parallels-Desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Parcel-Delivery-Tracking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Paw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Peri-Printer-Scanner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Photo-Booth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-PhotoBulk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Photos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Pixelmator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-PlayOnMac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Plex-Home-Theater.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Plex-Server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Pocket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Podcasts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-PopCornTime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Postman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-PrivateVPN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Processing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Procssor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-PushBullet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Quicktime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Razer-Synapse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Rdio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Readkit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Redirection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Reeder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Rekordbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Reminders.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-RescueTime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SSHProxy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SSHShell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SSHTunnel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Safari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-ScriptDebugger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Scrivener.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SecuritySpy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sequel-Pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SeratoDJ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Serviio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Shazam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sigil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Simple-Comic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SimpleNote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Siri.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sketch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Skype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Slack-V2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Slack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Slipcover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Snagit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SnippetsLab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sonos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Soulseek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Soundcloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SourceTree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Spark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sparrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Spideroak-Encrypter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Spideroak-One.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Spideroak-Semaphor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SplashtopPersonal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-SplashtopStreamer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Spotify.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Steam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Step-Two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Stickies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Stockfish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Streamlabs-OBS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Subler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sublime-Merge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sublime-Text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Sunrise.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Synergy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-System-Informations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-System-Preferences.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-TagEditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Teamviewer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Telegram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Terminal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-TextEdit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-TextWrangler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-The-Unarchiver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Thesaurus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Things.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Thunar-File-Manager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-ThunderBird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Time-machine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Todoist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Tor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Tower.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Transmission.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Transmit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Trello.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Trillian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-TrueCrypt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Tumblr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-TunnelBear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-TweetDeck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Tweetbot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Twitterrific.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-UTorrent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Uebersicht.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Unified-Remote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Unison-app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Unity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-UnrarX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-VMWare-Fusion-app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-VMWare-Horizon-View.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-VWorkspace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Videolan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-VirtualBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Viscosity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Visual-Studio-Code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Visual-Studio-Community.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Vivaldi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Vox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Warcraft-3-Reign-Of-Chaos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Whatsapp-Desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Wirecast-Desktop-Presenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Wirecast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Wireshark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Wunderlist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-X-Code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Xamarin-Studio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Xampp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Xbmc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-YACreader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Zeplin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-Zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-iGetter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-iMazing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-iStatMenus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-iWorks-Keynotes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-iWorks-Numbers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-iWorks-Pages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Apps-teamSpeak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-CD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Card-SD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Drive-External.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Drive-Internal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Drive-Removable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Drive-SSD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Drive-Server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Drive-Time-Machine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Devices-volumes-Floppy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-1Password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Ableton-Live.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-After-Effect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Dreamweaver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Flash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Illustrator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Indesign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Lightroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Photoshop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Adobe-Premiere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-App-Store.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Archive-Utility.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Bittorrent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Byword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Caffeine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Coda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Codekit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Contacts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Default-Document.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Disk-Image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Eclipse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Firefox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Font-Book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Google-chrome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Imovie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Itunes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Messages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Ms-Excel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Ms-Powerpoint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Ms-Word.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Quicktime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Safari.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Sequel-Pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Sparrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Sublime-Text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-The-Unarchiver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Unison.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-VMWareFusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Videolan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Files-Types-Wirecast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folder-User-YACReaderLibrary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-Ableton-Live.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-After-Effect-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Bridge-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Creative-Cloud-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Dreamweaver-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Fireworks-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Flash-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Illustrator-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Indesign-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Lightroom-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Photoshop-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Adobe-Premiere-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Dropbox-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Github-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-Google-Drive-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-ParallelsDesktop-Linux-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-App-ParallelsDesktop-Win-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Applications.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Burnable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Developer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Documents.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Downloads.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Games.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Generic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Library.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Movies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Music.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Pictures-folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Public.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Sites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Smart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-System.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-User.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-Utilities.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Folders-User-cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Batman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Battle-Net-Launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Bioshock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-CSGO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Call-Of-Duty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Diablo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Diablo-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-EpicGameLauncher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Fortnite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-GTA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-GuildWars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-H1Z1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Hearthstone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Hitman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-League-Of-Legends.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Limbo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Minecraft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-OpenEmu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Overwatch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Pubg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Rainbow-Six-Siege.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Roblox-Studio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Roblox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Robokill.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-RuneScape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Smite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Starcraft-2-Hots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Starcraft-2-Wol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Transistor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Valorant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Wakfu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-Warcraft-3-The-Frozen-Throne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Games-World-Of-Warcraft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-App-Default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Finder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Network.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Shortcut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Trash-Dark-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Trash-Full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Trash-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-Trash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-badge-Private.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/Osx-badge-Read-Only.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icons/apps-Traktor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/users/1/documents/jsLibre.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/users/1/documents/unnamed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/users/1/documents/webDesign.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../emprendimos/src/framework/components/_Responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Box/Box.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Box/_Box.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/libs/replaceRouteShowcase.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_about_us_list.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_actions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_ads.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_ads_actions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_albums.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_albums_tags.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_categories.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_configs.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_contacts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_images.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_images_tag.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_pages.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_pages_sections.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_posts.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_testimonials.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_user_types.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_users_showcase.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/sql/postgres_public_view_testimonials_home.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/apollo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/apollo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/apollo/showcase_page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/apollo/showcase_page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Button/Button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Button/Button.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Button/Button.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Footer/_Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Footer/_Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/GalleryImagesAlbums/GalleryImagesAlbums.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/GalleryImagesAlbums/GalleryImagesAlbums.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/GalleryImagesHover/GalleryImagesHover.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/GalleryImagesHover/GalleryImagesHover.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/GallerySectionUsers/GallerySectionUsers.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/GallerySectionUsers/GallerySectionUsers.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Nav/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Nav/Nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Nav/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Nav/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Showcase/Showcase.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Showcase/Showcase.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Showcase/_Showcase.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Showcase/_Showcase.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Toolbar/Toolbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Toolbar/Toolbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Toolbar/_Toolbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/Toolbar/_Toolbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/UsersAccount/UsersAccount.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/components/UsersAccount/UsersAccount.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/interfaces/IRoute.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/interfaces/IRoute.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/routes/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/routes/_layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/routes/showcase/[...slug].svelte" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/routes/showcase/[...slug].svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/settings/nav.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/settings/nav.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/store/ContactStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/store/ContactStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/style/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/style/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/src/style/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/src/style/theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sapper-svelte-photography/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../sapper-svelte-photography/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1oG5eB4EUSy4jP6prWMACZpleXv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="database.data.extractors.current.export.id" value="SQL Updates" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/events" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/events" />
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$/static/users/3" />
+      <recent name="$PROJECT_DIR$/static/users/2" />
+      <recent name="$PROJECT_DIR$/static/users" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/users/1/documents" />
+      <recent name="$PROJECT_DIR$/src/apps/notes/images" />
+      <recent name="$PROJECT_DIR$/src/apps/calc/images" />
+      <recent name="$PROJECT_DIR$/src/apps/browser/images" />
+      <recent name="$PROJECT_DIR$/src/apps/about/images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20093bb4-0bd3-4bdb-bc3c-f9e31608d948" name="Default Changelist" comment="" />
+      <created>1612900179865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612900179865</updated>
+      <workItem from="1612900181025" duration="5090000" />
+      <workItem from="1612907205965" duration="47690000" />
+      <workItem from="1613211681100" duration="275000" />
+      <workItem from="1613215313445" duration="7728000" />
+      <workItem from="1613224425268" duration="15319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1451" y="176" key="SettingsEditor" timestamp="1613071887795">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1451" y="176" key="SettingsEditor/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613071887795" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1613160618054">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613160618054" />
+    <state x="-1150" y="398" width="380" height="283" key="XPathView.InputDialog.DIMENSION_SERVICE_KEY.SIMPLE" timestamp="1613072209844">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1150" y="398" width="380" height="283" key="XPathView.InputDialog.DIMENSION_SERVICE_KEY.SIMPLE/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613072209844" />
+    <state x="-1222" y="349" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1613072473638">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1222" y="349" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613072473638" />
+    <state x="-1372" y="199" key="editAsTableFormatDialogDimension" timestamp="1613072431794">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1372" y="199" key="editAsTableFormatDialogDimension/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613072431794" />
+    <state x="-1261" y="266" width="602" height="548" key="find.popup" timestamp="1613160247702">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1261" y="266" width="602" height="548" key="find.popup/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613160247702" />
+    <state x="2545" y="277" width="670" height="676" key="search.everywhere.popup" timestamp="1613241554991">
+      <screen x="1920" y="36" width="1920" height="1080" />
+    </state>
+    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup/-2646.1080.1680.1050/-1920.0.1920.1080/0.0.1920.1080/-3840.0.1920.1080/-5760.0.1920.1080@-1920.0.1920.1080" timestamp="1613168866056" />
+    <state x="2545" y="277" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/3840.36.1920.1080/1920.36.1920.1080/3039.1116.1680.1050/5760.36.1920.1080@1920.36.1920.1080" timestamp="1613241554991" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/126.1080.1680.1050/-1920.0.1920.1080/3840.117.1920.1080/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1612992279170" />
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
+  </component>
+</project>

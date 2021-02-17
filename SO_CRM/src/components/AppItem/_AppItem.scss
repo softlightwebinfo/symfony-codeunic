@@ -1,0 +1,27 @@
+@import "src/style/theme";
+
+div {
+  width: var(--aside-icons-size);
+  height: var(--aside-icons-size);
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  @include transitionDefault;
+  background-color: white;
+
+  &:hover {
+    opacity: .7;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.activeView {
+  border: 3px solid black;
+  border-radius: 10px;
+}

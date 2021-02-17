@@ -1,0 +1,31 @@
+@import "src/style/theme";
+
+section {
+  overflow: hidden;
+}
+
+.apps {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: calculateEm(20px);
+}
+
+.access {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(40, 70px);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(13, 70px);
+  grid-gap: 10px;
+  padding: 10px;
+}
