@@ -1,18 +1,19 @@
 <script lang="ts">
     import Nav from "../components/Nav/Nav.svelte";
+    import { nav } from "../store/ContactStore";
 
     export let segment: string;
 </script>
-<style lang="scss" global>
+<style global lang="scss">
   @import "../style/global.scss";
 
   nav + main {
     margin-top: 80px;
   }
 </style>
-
-<Nav {segment}/>
-
+{#if segment !== "dashboard"}
+  <Nav {segment} white="{$nav.white}"/>
+{/if}
 <main>
-    <slot/>
+  <slot/>
 </main>

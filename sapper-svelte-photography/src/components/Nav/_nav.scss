@@ -46,10 +46,22 @@
     display: block;
   }
 
+  :global(.container) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &--scroll {
     @extend .nav;
     background-color: #fff;
     color: black;
     @include shadow(0px 0px 10px -6px black);
   }
+}
+
+.white {
+  @include shadow(0px 0px 10px -6px black);
+  background-color: #fff;
+  color: black;
 }

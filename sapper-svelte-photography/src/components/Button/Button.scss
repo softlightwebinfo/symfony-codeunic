@@ -11,3 +11,13 @@
   text-decoration: none;
   width: max-content;
 }
+
+.custom {
+  @include transition-default;
+  background-color: $color-success;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+}

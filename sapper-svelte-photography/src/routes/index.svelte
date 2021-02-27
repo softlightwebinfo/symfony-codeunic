@@ -10,6 +10,7 @@
     image: getImageUpload(image.image),
     title: image.title,
     category: image.album.title,
+    id: image.id,
   }))
 </script>
 <script context="module">

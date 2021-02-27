@@ -53,6 +53,7 @@
         description: user.description,
         category: user.user.user_type.user_type,
         image: user.image,
+        username: user.user.username,
     })));
 </script>
 <section class="gallerySection">

@@ -8,6 +8,7 @@
   import {routesShowCase} from "../../settings/nav";
 
   export let user;
+  export let page;
   export let showcase;
   export let description;
 </script>
@@ -20,6 +21,7 @@
   <Toolbar
     routes="{routesShowCase}"
     user="{user}"
+    {page}
   />
   <slot/>
 </section>

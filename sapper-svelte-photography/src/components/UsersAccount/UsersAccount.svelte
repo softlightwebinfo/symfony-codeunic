@@ -8,12 +8,12 @@
     import CardNewsAccounts from "../CardNewsAccounts/CardNewsAccounts.svelte";
 
     export let all = false;
-    export let data: { image: string, category: string; title: string; date: string; description: string }[] = [];
+    export let data: { image: string, username: string, category: string; title: string; date: string; description: string }[] = [];
 </script>
 <section class="usersAccount" class:all>
-  <Container flex all>
+  <Container all flex>
     {#each data as item}
-      <a href="detail">
+      <a href="showcase/{item.username}">
         <CardNewsAccounts
           date="{item.updated_at}"
           title="{item.title}"

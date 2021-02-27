@@ -11,3 +11,22 @@
   -webkit-box-shadow: $shadow;
   -o-box-shadow: $shadow;
 }
+
+@mixin Input() {
+  border: 1px solid gainsboro;
+  border-radius: $input-border-radius;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+@mixin container-fluid() {
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin Card() {
+  padding: $padding;
+  background-color: #fff;
+  border-radius: $border-radius;
+}

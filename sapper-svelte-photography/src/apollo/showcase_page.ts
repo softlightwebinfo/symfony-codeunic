@@ -10,6 +10,10 @@ export const SHOWCASE_PAGE = gql`
             imageByFkBanner {
                 image
             }
+            users_socials {
+                social_name
+                social_url
+            }
             user {
                 name
                 email
@@ -24,6 +28,7 @@ export const SHOWCASE_PAGE = gql`
                 }
                 albums {
                     id
+                    title
                     photo(limit: 1) {
                         image
                         title

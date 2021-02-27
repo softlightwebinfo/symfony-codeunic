@@ -10,7 +10,7 @@
   export let images = [];
 </script>
 <Container>
-  <section>
+  <section class="GalleryImagesAlbums">
     {#each images as image}
       <a href="albums/{slug(image.title)}/{image.id}">
         <article>

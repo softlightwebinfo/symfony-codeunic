@@ -1,9 +1,13 @@
 import fetch from 'isomorphic-fetch'
-import ApolloClient from 'apollo-boost'
+import ApolloClient, { InMemoryCache } from 'apollo-boost'
 
 const client = new ApolloClient({
-    uri: "http://localhost:9000/v1/graphql",
+    uri: "https://hasura.photostame.com/v1/graphql",
     fetch: fetch,
+    headers: {
+        'x-hasura-admin-secret': "myadminsecretkey",
+    },
+    cache: new InMemoryCache(),
 });
 
 export default client;

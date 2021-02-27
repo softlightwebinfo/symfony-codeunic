@@ -10,11 +10,11 @@ export const navOptions: IRoute[] = [
     {route: "contact", label: "Contact"},
 ];
 export const routesShowCase: IRoute[] = [
-    {label: "Information", route: "showcase/{slug}/information"},
-    {label: "Albums", route: "showcase/{slug}/albums"},
-    {label: "Gallery", route: "showcase/{slug}/gallery"},
-    {label: "Models", route: "showcase/{slug}/models"},
-    {label: "Prices", route: "showcase/{slug}/prices"},
-    {label: "Schedule", route: "showcase/{slug}/schedule"},
-    {label: "Contact", route: "showcase/{slug}/contact"},
+    {label: "Information", route: "showcase/{slug}/information", key: "information"},
+    {label: "Albums", route: "showcase/{slug}/albums", key: "albums"},
+    {label: "Gallery", route: "showcase/{slug}/gallery", key: "gallery"},
+    {label: "Models", route: "showcase/{slug}/models", key: "models"},
+    {label: "Prices", route: "showcase/{slug}/prices", key: "prices"},
+    {label: "Schedule", route: "showcase/{slug}/schedule", key: "schedule"},
+    {label: "Contact", route: "showcase/{slug}/contact", key: "contact"},
 ];

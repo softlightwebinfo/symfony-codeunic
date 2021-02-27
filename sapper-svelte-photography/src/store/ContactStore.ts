@@ -7,3 +7,7 @@ export const contact = writable({
     phone: "",
     message: "",
 })
+
+export const nav = writable({
+    white: false,
+})

@@ -157,3 +157,4 @@ Sapper is in early development, and may have the odd rough edge here and there. 
 ```mogrify -path thumbs -units PixelsPerInch -resample 75 -resize 500x300 *.*``` 
 
 ```convert -units PixelsPerInch -resample 75 -resize 1000x600 *.* ```
+# react-photography

@@ -3,4 +3,5 @@ export default {
     imagesUpload: "upload",
     imagesThumbUpload: "upload/thumbs",
     galleryPaginationSize: 38,
+    appName: "PhotoStame"
 }
