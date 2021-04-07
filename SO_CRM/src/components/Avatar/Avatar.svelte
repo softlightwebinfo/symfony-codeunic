@@ -4,7 +4,8 @@
 <script>
   export let title;
   export let image;
+  export let big = false;
 </script>
-<div>
+<div class:big>
   <img alt="{title}" src="{image}" title="{title}">
 </div>

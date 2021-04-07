@@ -2,5 +2,130 @@
   "icon": "images/icon.png",
   "label": "About",
   "color": "yellow",
-  "dark": true
+  "dark": true,
+  "maximize": false,
+  "tabs": [
+    {
+      "label": "Visión general",
+      "active": true
+    },
+    {
+      "label": "Almacenamiento"
+    },
+    {
+      "label": "Soporte"
+    },
+    {
+      "label": "Servicio"
+    }
+  ],
+  "vars": {
+    "appName": "CybersatOS",
+    "avatar": "/images/icon_background.jpg",
+    "version": "0.1.0",
+    "storage": {
+      "button": "Gestionar",
+      "image": "/images/icons/Devices-volumes-Drive-Removable.png",
+      "disk": [
+        {
+          "value": 5,
+          "type": "GB",
+          "space": 1,
+          "text": "Storage flash"
+        },
+        {
+          "value": 10,
+          "type": "GB",
+          "space": 10,
+          "text": "Storage flash 2"
+        }
+      ]
+    },
+    "list": [
+      {
+        "label": "System operative",
+        "value": "2021"
+      },
+      {
+        "label": "Year",
+        "value": "2021"
+      },
+      {
+        "label": "Serie number",
+        "value": "10454523EX"
+      },
+      {
+        "label": "Month",
+        "value": "03"
+      },
+      {
+        "label": "Day",
+        "value": "30"
+      },
+      {
+        "label": "Author",
+        "value": "Rafa González"
+      },
+      {
+        "label": "Email",
+        "value": "codeunic.system.platform@gmail.com"
+      }
+    ],
+    "support": [
+      {
+        "label": "Resources de SO",
+        "icon": "images/icons/Apple-Products-Imac-Aluminium.png",
+        "links": [
+          {
+            "label": "Help OS",
+            "link": "https://www.musicosdelmundo.com"
+          },
+          {
+            "label": "User Manual",
+            "link": "https://www.musicosdelmundo.com"
+          },
+          {
+            "label": "Contact",
+            "link": "https://www.musicosdelmundo.com/contact"
+          }
+        ]
+      },
+      {
+        "label": "Resources de SO",
+        "icon": "images/icons/Apple-Products-MacBookPro-Unibody.png",
+        "links": [
+          {
+            "label": "Help OS",
+            "link": "https://www.musicosdelmundo.com"
+          },
+          {
+            "label": "User Manual",
+            "link": "https://www.musicosdelmundo.com"
+          },
+          {
+            "label": "Contact",
+            "link": "https://www.musicosdelmundo.com/contact"
+          }
+        ]
+      }
+    ],
+    "service": {
+      "image": "/images/icons/Apps-3hub.png",
+      "text": "Todos los productos tienen 90 dias de soporte\n Si has adquirido el sistema por llamada telefonica tendrás un 10% de descuento.\nObtendras 1 año de soporte telefonico.\nEn caso de que necesites realizar alguna aplicación a medida comunicate en el apartado de soporte para enviar un correo.",
+      "links": [
+        {
+          "label": "Comprobar el estado de la cobertura del servicio",
+          "link": "#"
+        },
+        {
+          "label": "Mostrar mis opciones de asistencia",
+          "link": "#"
+        },
+        {
+          "label": "Más informacion acerca de los servicios",
+          "link": "#"
+        }
+      ]
+    }
+  }
 }

@@ -12,6 +12,7 @@ import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import json from "@rollup/plugin-json";
 import fs from 'fs';
+import {capitalize} from "./src/functions/capitalize";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -80,29 +81,6 @@ export default {
     input: {server: config.server.input().server.replace(/\.js$/, ".ts")},
     output: config.server.output(),
     plugins: [
-      {
-        buildStart() {
-          const dest = "static/apps";
-          const srcApps = "src/apps";
-          const read = fs.readdirSync("src/apps").filter(e => !e.includes("."));
-          const infoApps = {};
-          read.forEach((value, index) => {
-            const app = value;
-            const route = `src/apps/${app}`;
-            const config = require(`./${route}/config.json`);
-            const icon = `${route}/${config.icon}`;
-            const lastDir = config.icon.split("/")
-            lastDir.pop();
-            infoApps[app] = config;
-            fs.mkdirSync(`${dest}/${app}/${lastDir.join("/")}`, {recursive: true});
-            fs.copyFile(icon, `${dest}/${app}/${config.icon}`, (err) => {
-              if (err) throw err;
-              console.log('source.txt was copied to destination.txt');
-            });
-          })
-          fs.writeFileSync(`${srcApps}/config.json`, JSON.stringify(infoApps));
-        },
-      },
       replace({
         'process.browser': false,
         'process.env.NODE_ENV': JSON.stringify(mode)

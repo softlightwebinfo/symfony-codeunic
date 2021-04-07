@@ -4,6 +4,8 @@ import (
 	"bytes"
 	"database/sql"
 	"fmt"
+	"github.com/lib/pq"
+	"log"
 	"reflect"
 	"so-crm/src/libs/ORM/lib"
 	"strings"
@@ -56,6 +58,14 @@ func (q *ORMMutation) Return(isReturn bool) *ORMMutation {
 	q.fields.IsReturn = isReturn
 	return q
 }
+func (q *ORMMutation) convertValue(set ORMSet) interface{} {
+	switch set.ColumnType {
+	case "[]string":
+		return pq.Array(set.Value)
+	default:
+		return set.Value
+	}
+}
 func (q *ORMMutation) build() (string, []interface{}) {
 	sqlBuffer := q.sql
 	into := q.fields.Into.Into
@@ -75,7 +85,6 @@ func (q *ORMMutation) build() (string, []interface{}) {
 	for _, set := range q.fields.Set {
 		field := lib.ToSnakeCase(set.Column)
 		allColumns = append(allColumns, field)
-		value := set.Value
 		if q.fields.IsCreate {
 			if set.Column == "DeletedAt" || set.Column == "Id" {
 				continue
@@ -88,13 +97,14 @@ func (q *ORMMutation) build() (string, []interface{}) {
 			}
 			columns = append(columns, fmt.Sprintf("%s=$%d", field, len(values)+1))
 		}
-		values = append(values, value)
+		fmt.Println(set)
+		values = append(values, q.convertValue(set))
 	}
 
 	if q.fields.IsCreate {
 		sqlBuffer.WriteString(
 			fmt.Sprintf(
-				"(%s) VALUES(%s)",
+				"(%s) VALUES(%v)",
 				strings.Join(columns, ", "),
 				strings.Join(valuesNumbers, ", "),
 			),
@@ -152,7 +162,7 @@ func (q *ORMMutation) Save(model interface{}) error {
 
 	var methodBefore = "BeforeCreate"
 
-	if !q.fields.IsCreate {
+	if !isCreate {
 		methodBefore = "BeforeUpdate"
 	}
 
@@ -161,7 +171,7 @@ func (q *ORMMutation) Save(model interface{}) error {
 		beforeCreate.Call(inputs)
 	}
 
-	if !q.fields.IsCreate && isExistModel.IsValid() {
+	if !q.fields.IsCreate && !isCreate {
 		q.Where("Id", "=", isExistModel.Interface())
 	}
 
@@ -170,9 +180,12 @@ func (q *ORMMutation) Save(model interface{}) error {
 
 	sqlBuilder, params := q.build()
 
+	fmt.Println(sqlBuilder, params)
+
 	if q.fields.IsReturn {
 		rows, err := q.DB.Query(sqlBuilder, params...)
 		if err != nil {
+			log.Println("HOLA", err.Error())
 			return err
 		}
 		columns, err := rows.Columns()
@@ -183,9 +196,13 @@ func (q *ORMMutation) Save(model interface{}) error {
 			var ii interface{}
 			values[i] = &ii
 		}
+
 		columnsModel := []string{"Id", "CreatedAt", "UpdatedAt", "DeletedAt"}
 		for rows.Next() {
-			rows.Scan(values...)
+			err := rows.Scan(values...)
+			if err != nil {
+				return err
+			}
 			for i, colName := range columns {
 				var raw_value = *(values[i].(*interface{}))
 				//var raw_type = reflect.TypeOf(raw_value)
@@ -204,6 +221,7 @@ func (q *ORMMutation) Save(model interface{}) error {
 		}
 		return nil
 	}
+
 	_, err := q.DB.Exec(sqlBuilder, params...)
 
 	return err
@@ -261,7 +279,10 @@ func (q *ORMMutation) Delete(model interface{}) error {
 
 		columnsModel := []string{"Id", "CreatedAt", "UpdatedAt", "DeletedAt"}
 		for rows.Next() {
-			rows.Scan(values...)
+			err := rows.Scan(values...)
+			if err != nil {
+				return err
+			}
 			for i, colName := range columns {
 				var raw_value = *(values[i].(*interface{}))
 				//var raw_type = reflect.TypeOf(raw_value)

@@ -2,5 +2,21 @@
   "icon": "images/icon.png",
   "label": "Notes",
   "color": "yellow",
-  "dark": true
+  "dark": true,
+  "vars": {
+    "first": {
+      "title": "Encuentra la nota que buscas",
+      "button": "Continuar",
+      "list": [
+        {
+          "title": "Búsqueda potente",
+          "description": "Búsca texto, texto escrito a mano"
+        },
+        {
+          "title": "Novedades de esta versión",
+          "description": "Diseño mas bonito y un rápido uso"
+        }
+      ]
+    }
+  }
 }

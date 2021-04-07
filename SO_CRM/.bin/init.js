@@ -1,5 +1,11 @@
-import fs from "fs";
-import {capitalize} from "../src/functions/capitalize";
+#!/usr/bin/env node
+
+const fs = require("fs");
+
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
 
 const dest = "static/apps";
 const srcApps = "src/apps";
@@ -10,7 +16,7 @@ let appsLinks = "";
 read.forEach((value, index) => {
   const app = value;
   const route = `src/apps/${app}`;
-  const config = require(`./${route}/config.json`);
+  const config = require(`../${route}/config.json`);
   const icon = `${route}/${config.icon}`;
   const lastDir = config.icon.split("/")
   lastDir.pop();
@@ -30,12 +36,13 @@ const template = `
 <script>
 ${imports}
 export let app;
+export let activeTab = null;
 export const appsLings = {
 ${appsLinks}
 }
 </script>
 {#if app}
-  <svelte:component this="{appsLings[app]}"/>
+  <svelte:component this="{appsLings[app]}" activeTab={activeTab}/>
 {/if}
-            `;
+`;
 fs.writeFileSync(`${srcApps}/index.svelte`, template);

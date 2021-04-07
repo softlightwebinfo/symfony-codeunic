@@ -24,7 +24,7 @@
   }
 </script>
 
-<article >
+<article>
   <img alt="{label}" src="{imageIcon()}" title="{label}">
   <p>{label}</p>
 </article>

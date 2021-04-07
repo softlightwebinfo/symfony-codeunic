@@ -1,6 +1,6 @@
 {
-  "icon": "images/icon.jpg",
+  "icon": "images/icon.png",
   "label": "Youtube",
-  "color": "gainsboro",
+  "color": "yellow",
   "dark": true
 }

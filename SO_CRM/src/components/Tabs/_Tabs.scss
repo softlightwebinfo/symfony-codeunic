@@ -1,0 +1,43 @@
+@import "src/style/theme";
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 20px;
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+li {
+  border: 1px solid #525151;
+  color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &.active {
+    color: white;
+    background-color: #525151;
+  }
+}

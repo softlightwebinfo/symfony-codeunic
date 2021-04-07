@@ -11,3 +11,13 @@ img {
   height: 100%;
   border: 0;
 }
+
+.big {
+  width: 120px;
+  height: 120px;
+  border: 6px solid gainsboro;
+
+  img {
+    object-fit: cover;
+  }
+}

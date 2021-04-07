@@ -15,10 +15,17 @@
   $: activeView = $appActiveView === key;
 
   const onToggleActiveView = () => {
-    $apps.apps[key].open = !$apps.apps[key].open
+    if (!$apps.apps[key].minify) {
+      $apps.apps[key].open = !$apps.apps[key].open;
+    }
+
     if ($apps.apps[key].open) {
       $appActiveView = key;
     }
+    if ($apps.apps[key].minify) {
+      $appActiveView = "";
+    }
+    $apps.apps[key].minify = false;
   };
 </script>
 <div class:activeView={activeView} class:color={open} class:dark on:click={onToggleActiveView} style="{style}">

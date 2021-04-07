@@ -21,8 +21,8 @@ polka() // You can also use Express
         sapper.middleware({
             session: (req, res) => {
                 const userDecode = req.cookies?.['user'];
-                const user = userDecode ? JSON.parse(userDecode) : {}
-                if (user) {
+                const user = userDecode ? JSON.parse(userDecode) : null
+                if (user && user.user) {
                     user.user.image = "Lion.gif";
                 }
                 return {...user, authenticated: !!user}

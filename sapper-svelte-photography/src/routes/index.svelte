@@ -43,7 +43,7 @@
   }
 </style>
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>Photostame</title>
 </svelte:head>
 <SliderVideo
   description={data.configs_by_pk.description}

@@ -75,9 +75,47 @@
   @include transition(all .3s ease-in-out);
 }
 
+@mixin transform($important: "", $attr...) {
+  transform: $attr $important;
+  -moz-transform: $attr $important;
+  -webkit-transform: $attr $important;
+  -o-transform: $attr $important;
+  -ms-transform: $attr $important;
+}
+
 @mixin shadow($attr...) {
   box-shadow: $attr;
   -webkit-box-shadow: $attr;
   -moz-box-shadow: $attr;
   -o-box-shadow: $attr;
+}
+
+@mixin scrollbar() {
+  &::-webkit-scrollbar {
+    width: .3rem;
+  }
+
+  & {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #5651B7;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #392E3D;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d274c8;
+    border-radius: .5rem;
+    background: #706bd0;
+    background: linear-gradient(180deg, #323130 0%, #464637 100%);
+    border: 1px solid rgba(86, 81, 183, 0.5);
+  }
+}
+
+@mixin truncate() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

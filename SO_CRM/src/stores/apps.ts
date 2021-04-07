@@ -1,20 +1,34 @@
 import { writable } from "svelte/store";
-import about from "../apps/about/config.json";
-import calc from "../apps/calc/config.json";
-import notes from "../apps/notes/config.json";
+import { allApps } from '../apps';
 
 export const apps = writable({
     apps: {
         about: {
-            ...about,
-            open: false,
+            ...allApps.about,
         },
         calc: {
-            ...calc,
-            open: false,
+            ...allApps.calc,
         },
         notes: {
-            ...notes,
+            ...allApps.notes,
+        },
+        tasks: {
+            ...allApps.tasks,
+        },
+        youtube: {
+            ...allApps.youtube,
+        },
+        help: {
+            ...allApps.help,
+        },
+        browser: {
+            ...allApps.browser,
+        },
+        IDE: {
+            ...allApps.IDE,
+        },
+        TODO: {
+            ...allApps.TODO,
         },
     }
 });

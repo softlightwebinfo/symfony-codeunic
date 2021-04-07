@@ -92,6 +92,11 @@
   <div class="apps">
     {#each Object.entries(appsWindows) as [key, item], index}
       <Window
+        tabs="{item.tabs}"
+        activeMaximize="{item.maximize}"
+        main="{item.main}"
+        dark="{item.dark}"
+        minify={item.minify||false}
         index={index + 2}
         appName="{key}"
       />

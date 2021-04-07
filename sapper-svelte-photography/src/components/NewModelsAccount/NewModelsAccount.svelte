@@ -16,10 +16,10 @@
       <a href="albums/{slug(item.title)}/{item.id}">
         <CardNewsAccounts
           date="{item.updated_at}"
-          title="{item.images[0].title}"
+          title="{item.images.length ? item.images[0].title: ''}"
           category="{item.title}"
-          description="{item.images[0].description}"
-          image={ getImageUpload(item.images[0].image)}
+          description="{item.images.length? item.images[0].description: ''}"
+          image={ getImageUpload(item.images.length? item.images[0].image: '')}
         />
       </a>
     {/each}

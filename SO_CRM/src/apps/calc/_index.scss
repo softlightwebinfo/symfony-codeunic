@@ -1,0 +1,92 @@
+@import "src/style/theme";
+
+$buttonLeft: "/", "x", "-", "+", "=";
+$button1Number: 7, 8, 9;
+$button2Number: 4, 5, 6;
+$button3Number: 1, 2, 3;
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px);
+}
+
+header {
+  grid-column: span 4;
+  background-color: #323130;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  text-align: right;
+  color: white;
+  font-size: calculateEm(40px);
+  width: 100%;
+  appearance: none;
+  padding: 10px;
+}
+
+button {
+  background: rgb(90, 90, 90);
+  border: 1px solid rgb(36, 36, 36);
+  color: white;
+  font-size: 2em;
+  font-weight: 100;
+
+  &:active,
+  &:focus,
+  &:hover {
+    outline: 0;
+    opacity: .8;
+    cursor: pointer;
+  }
+
+  &[data-order="0"] {
+    grid-column: span 2;
+    grid-row: 6;
+  }
+
+  @each $button in $button1Number {
+    $i: index($button1Number, $button);
+
+    &[data-order='#{$button}'] {
+      grid-row: 3;
+      grid-column: $i;
+    }
+  }
+
+  @each $button in $button2Number {
+    $i: index($button2Number, $button);
+
+    &[data-order='#{$button}'] {
+      grid-row: 4;
+      grid-column: $i;
+    }
+  }
+
+  @each $button in $button3Number {
+    $i: index($button3Number, $button);
+
+    &[data-order='#{$button}'] {
+      grid-row: 5;
+      grid-column: $i;
+    }
+  }
+
+  @each $button in $buttonLeft {
+    $i: index($buttonLeft, $button);
+    &[data-order='#{$button}'] {
+      grid-column: 4;
+      grid-row: $i + 1;
+      background: rgb(251, 150, 34);
+    }
+  }
+}
+
+.symbol {
+  opacity: 1;
+  border: 4px solid #323130;
+  border-radius: 10px;
+  outline: 0;
+}

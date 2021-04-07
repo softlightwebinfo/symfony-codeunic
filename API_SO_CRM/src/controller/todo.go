@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"so-crm/src/entity"
 	"so-crm/src/models"
+	"so-crm/src/models/request"
 	"so-crm/src/service"
 )
 
@@ -43,6 +44,32 @@ func (controller *TodoController) GetAll() gin.HandlerFunc {
 				&todoRow.UpdatedAt,
 			)
 			todo = append(todo, &todoRow)
+		}
+
+		c.JSON(http.StatusOK, todo)
+	}
+}
+
+func (controller *TodoController) Create() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		user := service.AuthServiceLogin(c)
+		rq := request.TODOCreate{}
+		todo := entity.Todo{}
+
+		if errJson := c.BindJSON(&rq); errJson != nil {
+			c.JSON(http.StatusBadRequest, errJson)
+			return
+		}
+
+		todo.Title = rq.Title
+		todo.FkUserId = user.Id
+		todo.Tags = []string{"test", "test2"}
+
+		err := models.DB.Mutation().Return(true).Save(&todo)
+
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, err)
+			return
 		}
 
 		c.JSON(http.StatusOK, todo)
